@@ -15,5 +15,6 @@ public class Main {
         time = time*12;
         String formatter = NumberFormat.getCurrencyInstance().format(principal*(rate*Math.pow(1+rate, time))/(Math.pow(1+rate, time)-1));
         System.out.println("Total: " + formatter);
+        scanner.close();
     }
 }
